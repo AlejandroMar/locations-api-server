@@ -6,13 +6,13 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+
 // Mount routes
 const locationsRoute = require('./routes/locationsRoute');
 
 // APP
 const app = express();
 // view engine
-app.set('view engine', 'pug');
 
 // middleware
 
@@ -32,10 +32,6 @@ mongoose.connect(
 
 
 // Use routes
-app.get('/', (req, res) => {
-    res.render('index', { title: 'Hey', message: 'Hello there!' });
-});
-
 app.use('/api/locations', locationsRoute);
 
 
