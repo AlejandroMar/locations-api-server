@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Connecting to the API
 To save locations with the API, make a <span style="color:red; font-weight:bold">POST </span> request to the following endpoint:
 > http<nolink>://localhost:4000/api/locations/
@@ -53,6 +52,3 @@ Example:
 
 
 
-=======
-# hola caracola
->>>>>>> 4d7824674cecc63e774b810c9eff4f58bcf8475c
