@@ -10,7 +10,7 @@ const upload = multer({ storage });
 const locationsController = require('../controllers/locationsController');
 
 
-router.post('/', upload.single('avatar'), locationsController.postLocation);
+router.post('/', upload.single('name'), locationsController.postLocation);
 
 
 module.exports = router;
