@@ -13,7 +13,12 @@ If you run the app on windows please refer to: [debug npm](https://www.npmjs.com
 
 # Connecting to the API
 To save locations with the API, make a <span style="color:red; font-weight:bold">POST </span> request to the following endpoint:
+
+development:
 > http<nolink>://localhost:4000/api/locations/
+
+production:
+> https<nolink>://warm-tor-11807.herokuapp.com/api/locations/
 
 ## Request headers
 The request should have a <strong>Content-Type: application/x-www-form-urlencoded </strong>
