@@ -37,7 +37,7 @@ exports.postLocation = async (req, res) => {
         // calculate distance to Ofice
         try {
             const startDistance = { latitude: json.lat, longitude: json.lng };
-            json.distanceToOfice = haversine(startDistance, officeLocation);
+            json.distanceToOffice = haversine(startDistance, officeLocation);
         } catch (error) {
             errors.distance = 'unable to calculate distance';
             res.send(errors);
