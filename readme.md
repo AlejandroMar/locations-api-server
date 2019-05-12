@@ -8,6 +8,7 @@ create a .env file to store your data base url like in the following example:
 
 ## Start the  development server
 > npm run dev
+
 If you run the app on windows please refer to: [debug npm](https://www.npmjs.com/package/debug) to set the package.json's script to windows mode.
 
 # Connecting to the API
