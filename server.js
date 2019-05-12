@@ -11,8 +11,11 @@ const locationsRoute = require('./routes/locationsRoute');
 
 // APP
 const app = express();
+// view engine
+app.set('view engine', 'pug');
 
 // middleware
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
@@ -29,6 +32,10 @@ mongoose.connect(
 
 
 // Use routes
+app.get('/', (req, res) => {
+    res.render('index', { title: 'Hey', message: 'Hello there!' });
+});
+
 app.use('/api/locations', locationsRoute);
 
 
